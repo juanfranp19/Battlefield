@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 70bf34f6c25c948458f254e87188b00b
+timeCreated: 1478987033
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145891
+  packageName: Create with Code | Prototype 1 - Driving Simulation
+  packageVersion: 1.0
+  assetPath: Assets/Course Library/Vehicles/Veh_Ute_Red_Z.prefab
+  uploadId: 326618

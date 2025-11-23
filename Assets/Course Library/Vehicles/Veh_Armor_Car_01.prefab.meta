@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aea2a6cdcc9d7944090d528486ebaee1
+timeCreated: 1495163674
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145891
+  packageName: Create with Code | Prototype 1 - Driving Simulation
+  packageVersion: 1.0
+  assetPath: Assets/Course Library/Vehicles/Veh_Armor_Car_01.prefab
+  uploadId: 326618

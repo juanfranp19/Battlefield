@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 68840c673a0b18e41a044ed077548d55
+timeCreated: 1478986973
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145891
+  packageName: Create with Code | Prototype 1 - Driving Simulation
+  packageVersion: 1.0
+  assetPath: Assets/Course Library/Vehicles/Veh_Van_Green_Z.prefab
+  uploadId: 326618
