@@ -9,7 +9,13 @@ public class PlayerController : MonoBehaviour
     private float forwardSpeed = 100f;
 
     [SerializeField]
-    private float maxZ = -6f; // posición máxima de Z
+    private float maxZ = -6f;
+
+    [SerializeField]
+    private float maxX = 8f;
+
+    [SerializeField]
+    private float minX = -8f;
 
     private bool moveForward = false;
 
@@ -32,9 +38,26 @@ public class PlayerController : MonoBehaviour
 
         if (!moveForward)
         {
-            // se mueve a la derecha o a la izquierda
+            // posición x
+            float positionX = this.transform.position.x;
+
             horizontalInput = Input.GetAxis("Horizontal");
-            this.transform.Translate(lateralSpeed * horizontalInput * Time.deltaTime * Vector3.right);
+
+            // calcula el movimiento
+            float movimiento = lateralSpeed * horizontalInput * Time.deltaTime;
+
+            // mientras el movimiento esté en el límite, puede hacerlo
+            if (positionX + movimiento <= maxX && positionX + movimiento >= minX)
+            {
+                // se mueve a la derecha o a la izquierda
+                this.transform.Translate(Vector3.right * movimiento);
+            }
+            else
+            {
+                // hace que no se salga del límite
+                if (positionX <= maxX) this.transform.Translate(Vector3.left);
+                if (positionX >= minX) this.transform.Translate(Vector3.right);
+            }
         }
         else
         {
