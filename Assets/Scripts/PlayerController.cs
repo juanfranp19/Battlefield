@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     [Range(0, 100), SerializeField]
     private float forwardSpeed = 100f;
 
+    [SerializeField]
+    private float maxZ = -6f; // posición máxima de Z
+
     private bool moveForward = false;
 
     private float horizontalInput;
@@ -35,8 +38,14 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // se mueve hacia delante
-            this.transform.Translate(forwardSpeed * Time.deltaTime * Vector3.forward);
+            float positionZ = this.transform.position.z;
+
+            // cuando llega a la posición máxima de Z, se para
+            if (!(positionZ <= maxZ))
+            {
+                // se mueve hacia delante
+                this.transform.Translate(forwardSpeed * Time.deltaTime * Vector3.forward);
+            }
         }
     }
 }

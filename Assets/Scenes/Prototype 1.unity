@@ -1049,6 +1049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lateralSpeed: 9.6
   forwardSpeed: 45.2
+  maxZ: -6
 --- !u!54 &246529759
 Rigidbody:
   m_ObjectHideFlags: 0
